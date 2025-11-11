@@ -2,8 +2,11 @@
   <Folder Name="/ConsumeApi/">
     <Project Path="ConsumeApi/HoteilerProject.BusinessLayer/HoteilerProject.BusinessLayer.csproj" />
     <Project Path="ConsumeApi/HoteilerProject.DataaccessLayer/HoteilerProject.DataaccessLayer.csproj" />
+    <Project Path="ConsumeApi/HoteilerProject.Dtolayer/HoteilerProject.Dtolayer.csproj" />
     <Project Path="ConsumeApi/HoteilerProject.EntityLayer/HoteilerProject.EntityLayer.csproj" />
     <Project Path="ConsumeApi/HoteilerProject.Webapi/HoteilerProject.Webapi.csproj" />
   </Folder>
-  <Folder Name="/Frontend/" />
+  <Folder Name="/Frontend/">
+    <Project Path="Frontend/HoteilerProject.WebUI/HoteilerProject.WebUI.csproj" />
+  </Folder>
 </Solution>
