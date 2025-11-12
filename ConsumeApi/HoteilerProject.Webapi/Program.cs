@@ -5,7 +5,13 @@ using HoteilerProject.DataaccessLayer.Concreate;
 using HoteilerProject.DataaccessLayer.EntityFramework;
 
 var builder = WebApplication.CreateBuilder(args);
-
+builder.Services.AddCors(opt =>
+{
+    opt.AddPolicy("OtelProjeKampi", opt =>
+    {
+        opt.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+    });
+});
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -37,7 +43,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseAuthorization();
-
+app.UseCors("OtelProjeKampi");
 app.MapControllers();
 
 app.Run();
